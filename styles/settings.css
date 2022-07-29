@@ -1,0 +1,88 @@
+:root {
+   /* Width */
+   --content-width: calc(80vw + 1.8rem);
+   --vw-remaining-space: calc(100% - var(--content-width));
+
+   /* Colors */
+   --clr-red: #d92d0a;
+   --clr-dark-red: #bf280a;
+   --clr-yellow: #ffd447;
+   --clr-blue: #2483ce;
+   --clr-white: #ffffff;
+   --clr-black-9: #0c0c0c;
+   --clr-black-8: #171717;
+   --clr-black-7: #272727;
+   --clr-black-6: #474747;
+   --clr-black-5: #9f9f9f;
+   --clr-black-4: #c0c0c0;
+   --clr-black-3: #d7d7d7;
+   --clr-black-2: #e0e0e0;
+   --clr-black-1: #f1f1f1;
+
+   /* Font sizes */
+   --fs-8: 3rem;
+   --fs-7: 2.3rem;
+   --fs-6: 1.9rem;
+   --fs-5: 1.8rem; /* label xl */
+   --fs-4: 1.5rem; /* label lg */
+   --fs-3: 1.4rem; /* label md */
+   --fs-2: 1.3rem; /* label sm */
+   --fs-1: 1.2rem; /* label xsm */
+   --fs-base: 1.6rem; /* base */
+
+   /* Font weights */
+   --fw-5: 800; /* extra bold */
+   --fw-4: 700; /* bold */
+   --fw-3: 600; /* semi bold */
+   --fw-2: 500; /* medium */
+   --fw-1: 400; /* regular */
+
+   /* Line heights */
+   --lh-2: calc(36 / 28);
+   --lh-1: calc(16.9 / 14);
+   --lh-base: calc(25 / 16);
+
+   /* Box shadows */
+   --bs-elevation: 0 2px 5px 0 rgba(158, 158, 158, 0.25);
+
+   /* Flex gap */
+   --gap-1: 1rem;
+   --gap-2: 1.5rem;
+   --gap-3: 2rem;
+   --gap-4: 2.5rem;
+   --gap-5: 3rem;
+   --gap-6: 3.5rem;
+   --gap-7: 4rem;
+
+   /* Border radius */
+   --br-1: 3px;
+   --br-6: 50px;
+
+   /* Padding */
+   --p-1: 0.8rem;
+   --p-2: 1rem;
+   --p-3: 1.2rem;
+   --p-4: 1.4rem;
+   --p-5: 1.6rem;
+   --p-6: 1.8rem;
+   --p-7: 2rem;
+   --p-8: 2.2rem;
+   --p-9: 2.4rem;
+   --p-10: 2.6rem;
+   --p-11: 2.8rem;
+   --p-12: 3rem;
+
+   /* Margin */
+   --m-1: 0.8rem;
+   --m-2: 1rem;
+   --m-3: 1.2rem;
+   --m-4: 1.4rem;
+   --m-5: 1.6rem;
+   --m-6: 1.8rem;
+   --m-7: 2rem;
+   --m-8: 2.2rem;
+   --m-9: 2.4rem;
+   --m-10: 2.6rem;
+   --m-11: 2.8rem;
+   --m-12: 3rem;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="The most trusted measurement of quality for movies & TV. The definitive site for reviews, trailers, showtimes, and tickets.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/icons/rt-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Rotten Tomatoes — The leading online aggregator of movie & TV reviews</title>
+</head>
+
+<body>
+
+    <!-- #Masthead -->
+
+    <header class="c-masthead u-flex u-jc-center u-ai-center u-bg-black-9 u-pb-6">
+        <div class="u-wrapper u-flex u-jc-space-between u-ai-center">
+            <div class="u-flex u-ai-center u-jc-center u-gap-3">
+                <a class="u-flex u-ai-center u-jc-center" href="./"><img class="o-logo" src="./assets/img/logo.svg"
+                        alt="Rotten Tomatoes Logo"></a>
+
+                <!-- #Search-bar -->
+
+                <div class="c-search-bar c-search-bar--dark u-d-none">
+                    <input class="c-search-bar__input" type="text" placeholder="Search movies, TV shows, more...">
+                    <svg class="c-search-bar__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.79999 14.6C11.5555 14.6 14.6 11.5555 14.6 7.79999C14.6 4.04446 11.5555 1 7.79999 1C4.04446 1 1 4.04446 1 7.79999C1 11.5555 4.04446 14.6 7.79999 14.6Z"
+                            stroke="#757575" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M17.3635 18.6364L17.9999 19.2728L19.2727 18L18.6363 17.3636L17.3635 18.6364ZM13.5363 12.2636L12.8999 11.6272L11.6271 12.9L12.2635 13.5364L13.5363 12.2636ZM18.6363 17.3636L13.5363 12.2636L12.2635 13.5364L17.3635 18.6364L18.6363 17.3636Z"
+                            fill="#757575" />
+                    </svg>
+                </div>
+
+            </div>
+            <div class="u-flex u-ai-center u-gap-2">
+                <button class="c-search-toggle u-center-flex js-search-toggle">
+                    <svg class="c-search-toggle__icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.19999 11.9C9.07187 11.9 11.4 9.57187 11.4 6.69999C11.4 3.82812 9.07187 1.5 6.19999 1.5C3.32812 1.5 1 3.82812 1 6.69999C1 9.57187 3.32812 11.9 6.19999 11.9Z"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M12.7048 14.2657L13.2351 14.796L14.2958 13.7353L13.7654 13.205L12.7048 14.2657ZM10.7066 10.1462L10.1763 9.61585L9.11561 10.6765L9.64594 11.2068L10.7066 10.1462ZM13.7654 13.205L10.7066 10.1462L9.64594 11.2068L12.7048 14.2657L13.7654 13.205Z"
+                            fill="white" />
+                    </svg>
+                    Search
+                </button>
+                <button class="c-btn c-btn--naked u-hover-underl u-d-none">Log in</button>
+                <button class="c-btn c-btn--primary u-d-none">Sign up</button>
+                <button class="u-center-flex c-nav-toggle js-nav-toggle">
+                    <img src="./assets/icons/menu-icon.svg" alt="Menu Icon">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- #Navbar (large) -->
+
+    <div class="c-navbar u-d-none u-jc-center">
+        <div class="u-wrapper u-flex u-jc-space-between">
+            <div class="c-navbar__group">
+                <button class="c-navbar__item js-movies-toggle">
+                    Menu
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2.3" />
+                    </svg>
+                </button>
+                <button class="c-navbar__item">
+                    TV Shows
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2.3" />
+                    </svg>
+                </button>
+                <button class="c-navbar__item">
+                    News
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2.3" />
+                    </svg>
+                </button>
+                <a href="https://www.rottentomatoes.com/showtimes" class="c-navbar__item">Showtimes</a>
+            </div>
+            <div class="c-navbar__group">
+                <a href="https://editorial.rottentomatoes.com/article/rt-podcast/" class="c-navbar__item">RT Podcast</a>
+                <a href="https://www.rottentomatoes.com/about#whatisthetomatometer"
+                    class="c-navbar__item">Tomatometer®</a>
+                <a href="https://www.rottentomatoes.com/critics" class="c-navbar__item">Critics</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- #Search-menu -->
+
+    <div class="c-search-menu u-flex u-flex-column u-ai-center u-full-screen u-bg-white js-search-menu u-hide">
+
+        <!-- #Masthead-open -->
+
+        <div class="u-wrapper u-pb-6 u-flex u-jc-space-between u-ai-center u-pb-end-8">
+            <a class="u-flex u-ai-center" href="./"><img class="o-logo" src="./assets/img/logo.svg"
+                    alt="Rotten Tomatoes Logo"></a>
+            <div class="u-flex u-ai-center">
+                <button class="c-close-toggle js-close-search-menu u-center-flex">
+                    Close
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.25L2 9.75" stroke="#171717" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        <path d="M2 1.25L10.5 9.75" stroke="#171717" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- #Search-bar -->
+
+        <div class="c-search-bar c-search-bar--light u-wrapper">
+            <input class="c-search-bar__input" type="text" placeholder="Search movies, TV shows, more...">
+            <svg class="c-search-bar__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.79999 14.6C11.5555 14.6 14.6 11.5555 14.6 7.79999C14.6 4.04446 11.5555 1 7.79999 1C4.04446 1 1 4.04446 1 7.79999C1 11.5555 4.04446 14.6 7.79999 14.6Z"
+                    stroke="#474747" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M17.3635 18.6364L17.9999 19.2728L19.2727 18L18.6363 17.3636L17.3635 18.6364ZM13.5363 12.2636L12.8999 11.6272L11.6271 12.9L12.2635 13.5364L13.5363 12.2636ZM18.6363 17.3636L13.5363 12.2636L12.2635 13.5364L17.3635 18.6364L18.6363 17.3636Z"
+                    fill="#474747" />
+            </svg>
+        </div>
+
+        <!-- #Filters -->
+        <div
+            class="u-flex u-ai-center u-no-shrink u-gap-2 u-horizontal-slider u-mb-start-8 u-mb-end-6 u-expand-x u-pb-end-4">
+            <button class="c-filter-chip u-center-flex u-push-to-center">
+                Genre<img src="./assets/icons/chevron-down.svg">
+            </button>
+            <button class="c-filter-chip u-center-flex">
+                Rating<img src="./assets/icons/chevron-down.svg">
+            </button>
+            <button class="c-filter-chip u-center-flex">
+                Audience Score<img src="./assets/icons/chevron-down.svg">
+            </button>
+            <button class="c-filter-chip u-center-flex">
+                Streaming Service<img src="./assets/icons/chevron-down.svg">
+            </button>
+            <button class="c-filter-chip u-center-flex u-pull-to-center">
+                Tomatometer®<img src="./assets/icons/chevron-down.svg">
+            </button>
+        </div>
+
+        <!-- #Movie-recommendations -->
+
+        <div class="u-flex u-flex-column u-ai-center u-gap-3 u-mb-end-6 u-expand-x">
+
+            <div class="u-wrapper u-flex u-jc-space-between">
+                <h3 class="u-fs-4 u-fw-4">Opening This Week</h3>
+                <a class="u-fs-1 u-fw-3 u-text-blue u-hover-underl"
+                    href="https://www.rottentomatoes.com/browse/movies_in_theaters/sort:newest?page=1">View all</a>
+            </div>
+
+            <div class="u-flex u-horizontal-slider u-gap-3 u-expand-x u-pb-end-8">
+                <a href="https://www.rottentomatoes.com/m/x_2022" class="c-movie-thumbnail u-push-to-center">
+                    <img class="u-br-1 o-poster" src="./assets/img/x-movie.webp" alt="X Poster">
+                    <div class="c-movie-thumbnail__info">
+                        <span class="c-movie-thumbnail__title">X</span>
+                        <span class="c-movie-thumbnail__rating u-center-flex">
+                            <img class="c-movie-thumbnail__icon" src="./assets/icons/certified-fresh-simplified.svg"
+                                alt="Certified Fresh Score Logo">
+                            95%
+                        </span>
+                    </div>
+                </a>
+                <a href="https://www.rottentomatoes.com/m/paris_13th_district" class="c-movie-thumbnail">
+                    <img class="u-br-1 o-poster" src="./assets/img/paris.webp" alt="Paris, 13th district Poster">
+                    <div class="c-movie-thumbnail__info">
+                        <span class="c-movie-thumbnail__title">Paris, 13th District</span>
+                        <span class="c-movie-thumbnail__rating u-center-flex">
+                            <img class="c-movie-thumbnail__icon" src="./assets/icons/certified-fresh-simplified.svg"
+                                alt="Certified Fresh Score Logo">
+                            83%
+                        </span>
+                    </div>
+                </a>
+                <a href="https://www.rottentomatoes.com/m/fantastic_beasts_the_secrets_of_dumbledore"
+                    class="c-movie-thumbnail">
+                    <img class="u-br-1 o-poster" src="./assets/img/fantastic-beasts.webp"
+                        alt="Fantastic Beasts: The Secrets of Dumbledore Poster">
+                    <div class="c-movie-thumbnail__info">
+                        <span class="c-movie-thumbnail__title">Fantastic Beasts: The Secrets of Dumbledore</span>
+                        <span class="c-movie-thumbnail__rating u-center-flex">
+                            <img class="c-movie-thumbnail__icon" src="./assets/icons/rotten.svg"
+                                alt="Certified Fresh Score Logo">
+                            47%
+                        </span>
+                    </div>
+                </a>
+                <a href="https://www.rottentomatoes.com/m/top_gun_maverick" class="c-movie-thumbnail u-pull-to-center">
+                    <img class="u-br-1 o-poster" src="./assets/img/top-gun-maverick.webp"
+                        alt="Top Gun: Maverick Poster">
+                    <div class="c-movie-thumbnail__info">
+                        <span class="c-movie-thumbnail__title">Top Gun: Maverick</span>
+                        <span class="c-movie-thumbnail__rating u-center-flex">
+                            <img class="c-movie-thumbnail__icon" src="./assets/icons/certified-fresh-simplified.svg"
+                                alt="Certified Fresh Score Logo">
+                            97%
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- #Movie-recommendations -->
+
+        <div class="u-flex u-flex-column u-ai-center u-gap-3 u-mb-end-6 u-expand-x">
+
+            <div class="u-wrapper u-flex u-jc-space-between">
+                <h3 class="u-fs-4 u-fw-4">Certified Fresh New Movies</h3>
+                <a class="u-fs-1 u-fw-3 u-text-blue u-hover-underl"
+                    href="https://www.rottentomatoes.com/browse/movies_in_theaters/sort:newest?page=1">View all</a>
+            </div>
+
+            <div class="u-flex u-horizontal-slider u-gap-3 u-expand-x u-pb-end-8">
+                <a href="https://www.rottentomatoes.com/m/the_lost_city" class="c-movie-thumbnail u-push-to-center">
+                    <img class="u-br-1 o-poster" src="./assets/img/the-lost-city.webp" alt="The Lost City Poster">
+                    <div class="c-movie-thumbnail__info">
+                        <span class="c-movie-thumbnail__title">The Lost City</span>
+                        <span class="c-movie-thumbnail__rating u-center-flex">
+                            <img class="c-movie-thumbnail__icon" src="./assets/icons/certified-fresh-simplified.svg"
+                                alt="Certified Fresh Score Logo">
+                            79%
+                        </span>
+                    </div>
+                </a>
+                <a href="https://www.rottentomatoes.com/m/the_power_of_the_dog" class="c-movie-thumbnail">
+                    <img class="u-br-1 o-poster" src="./assets/img/TPOTD.webp" alt="The Power of the Dog Poster">
+                    <div class="c-movie-thumbnail__info">
+                        <span class="c-movie-thumbnail__title">The Power of the Dog</span>
+                        <span class="c-movie-thumbnail__rating u-center-flex">
+                            <img class="c-movie-thumbnail__icon" src="./assets/icons/certified-fresh-simplified.svg"
+                                alt="Certified Fresh Score Logo">
+                            94%
+                        </span>
+                    </div>
+                </a>
+                <a href="https://www.rottentomatoes.com/m/emergency_2022" class="c-movie-thumbnail">
+                    <img class="u-br-1 o-poster" src="./assets/img/Emergency.webp" alt="Emergency">
+                    <div class="c-movie-thumbnail__info">
+                        <span class="c-movie-thumbnail__title">Emergency</span>
+                        <span class="c-movie-thumbnail__rating u-center-flex">
+                            <img class="c-movie-thumbnail__icon" src="./assets/icons/certified-fresh-simplified.svg"
+                                alt="Certified Fresh Score Logo">
+                            93%
+                        </span>
+                    </div>
+                </a>
+                <a href="https://www.rottentomatoes.com/m/the_northman" class="c-movie-thumbnail u-pull-to-center">
+                    <img class="u-br-1 o-poster" src="./assets/img/the-northman.webp" alt="The Northman Poster">
+                    <div class="c-movie-thumbnail__info">
+                        <span class="c-movie-thumbnail__title">The Northman</span>
+                        <span class="c-movie-thumbnail__rating u-center-flex">
+                            <img class="c-movie-thumbnail__icon" src="./assets/icons/certified-fresh-simplified.svg"
+                                alt="Certified Fresh Score Logo">
+                            89%
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- #Trending-blogs -->
+
+        <div class="u-wrapper u-flex u-flex-column u-pb-end-12 u-gap-2">
+            <h3 class="u-fs-4 u-fw-4 u-flex u-gap-1">
+                <img src="./assets/icons/trend-icon.svg" alt="Trending Icon">Trending on RT
+            </h3>
+            <a href="https://editorial.rottentomatoes.com/article/is-top-gun-maverick-best-picture-worthy/"
+                class="o-blog-entry u-flex u-flex-column u-gap-1 u-hover-underl">
+                <h5 class="u-fs-2">Top Gun: Maverick First Reviews</h5>
+                <span class="u-fs-2">May 12, 2022</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- #Nav-menu -->
+
+    <nav class="c-nav-menu u-full-screen u-flex u-flex-column u-ai-center u-bg-white u-pb-end-12 js-nav-menu u-hide">
+
+        <!-- #Masthead-open -->
+
+        <div class="u-wrapper u-pb-6 u-flex u-jc-space-between u-ai-center u-pb-end-8">
+            <a class="u-flex u-ai-center" href="./"><img class="o-logo" src="./assets/img/logo.svg"
+                    alt="Rotten Tomatoes Logo"></a>
+            <div class="u-flex u-ai-center">
+                <button class="c-close-toggle js-nav-toggle u-center-flex">
+                    Close
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.25L2 9.75" stroke="#171717" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        <path d="M2 1.25L10.5 9.75" stroke="#171717" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- #Nav-list (mobile) -->
+
+        <div class="u-flex u-flex-column u-expand-x">
+            <a class="u-hover-bg-1 u-fs-4 u-fw-2 u-center-content-x u-flex u-ai-center u-gap-1 u-expand-x u-pb-5 u-top-divider u-c-pointer"
+                href="https://www.rottentomatoes.com/browse/movies_at_home/?page=1">
+                <img class="o-movies-icon" src="./assets/icons/movies-icon.svg">Movies
+            </a>
+            <a class="u-hover-bg-1 u-fs-4 u-fw-2 u-center-content-x u-flex u-ai-center u-gap-1 u-expand-x u-pb-5 u-top-divider u-c-pointer"
+                href="https://www.rottentomatoes.com/browse/tv_series_browse/?page=1">
+                <img class="o-shows-icon" src="./assets/icons/tv-shows-icon.svg">TV Shows
+            </a>
+            <a class="u-hover-bg-1 u-fs-4 u-fw-2 u-center-content-x u-flex u-ai-center u-gap-1 u-expand-x u-pb-5 u-top-divider u-c-pointer"
+                href="https://editorial.rottentomatoes.com/article/rt-podcast/">
+                <img class="o-podcast-icon" src="./assets/icons/podcast-icon.svg">RT Podcast
+            </a>
+            <a class="u-hover-bg-1 u-fs-4 u-fw-2 u-center-content-x u-flex u-ai-center u-gap-1 u-expand-x u-pb-5 u-top-divider u-c-pointer"
+                href="https://www.rottentomatoes.com/?openSignupModal=true">
+                <img class="o-account-icon" src="./assets/icons/account-icon.svg">Account
+            </a>
+            <label for="nav-dropdown-input"
+                class="u-hover-bg-1 u-fs-4 u-fw-2 u-center-content-x u-flex u-ai-center u-gap-1 u-expand-x u-pb-5 u-top-divider u-c-pointer u-jc-space-between u-flex-column u-ai-start">
+                <div class="u-expand-x u-flex u-jc-space-between">
+                    More<img src="./assets/icons/chevron-down.svg">
+                </div>
+                <input type="checkbox" id="nav-dropdown-input" class="o-dropdown-input">
+                <div class="u-flex-column o-dropdown-container">
+                    <a href="https://www.rottentomatoes.com/showtimes" class="u-hover-underl">Showtimes</a>
+                    <a href="https://www.rottentomatoes.com/critics" class="u-hover-underl">Critics</a>
+                    <a href="https://www.rottentomatoes.com/about#whatisthetomatometer"
+                        class="u-hover-underl">Tomatometer</a>
+                </div>
+            </label>
+            <a
+                class="u-hover-bg-1 u-fs-4 u-fw-2 u-center-content-x u-flex u-ai-center u-gap-1 u-expand-x u-pb-5 u-top-divider u-c-pointer u-gap-1 js-search-toggle">
+                <img src="./assets/icons/search-icon-black.svg">Search
+            </a>
+        </div>
+
+        <!-- #Nav-menu-buttons -->
+
+        <div class="u-wrapper u-flex u-flex-column u-push-bottom">
+            <button class="c-btn c-btn--gray u-expand-x u-mb-end-4">Log in</button>
+            <button class="c-btn c-btn--primary u-expand-x">Sign up</button>
+        </div>
+
+    </nav>
+
+    <!-- Main content -->
+
+    <main class="js-main o-main">
+
+        <!-- Hero section -->
+
+        <section class="o-section c-hero u-wrapper">
+            <div class="c-hero__main u-flex u-flex-column u-gap-5 u-wrapper">
+                <h1 class="u-fs-8 u-fw-5 u-lh-2">
+                    Welcome to <span class="u-text-red">Rotten Tomatoes</span>, the leading online aggregator of
+                    movie and TV show reviews
+                </h1>
+                <p class="u-lh-base u-fw-2">
+                    The most trusted measurement of quality for movies & TV. The definitive site for reviews, trailers,
+                    showtimes, and tickets.
+                </p>
+                <button class="c-btn c-btn--primary">Sign up</button>
+            </div>
+            <div class="o-poster-slider">
+                <figure class="o-poster-slider__item">
+                    <div class="c-rating-tag">
+                        <img src="./assets/icons/certified-fresh.svg" alt="Certified Fresh Icon"
+                            class="c-rating-tag__icon">
+                        78%
+                    </div>
+                    <img class="o-poster-slider__poster" src="./assets/img/the-lost-city.webp"
+                        alt="The Lost City Poster">
+                </figure>
+                <figure class="o-poster-slider__item">
+                    <div class="c-rating-tag">
+                        <img src="./assets/icons/rotten.svg" alt="Rotten Icon" class="c-rating-tag__icon">
+                        50%
+                    </div>
+                    <img class="o-poster-slider__poster" src="./assets/img/fantastic-beasts.webp"
+                        alt="Fantastic Beasts: The Secrets of Dumbledore Poster Poster">
+                </figure>
+                <figure class="o-poster-slider__item">
+                    <div class="c-rating-tag">
+                        <img src="./assets/icons/fresh.svg" alt="Fresh Icon" class="c-rating-tag__icon">
+                        88%
+                    </div>
+                    <img class="o-poster-slider__poster" src="./assets/img/servant.webp" alt="Servant Poster">
+                </figure>
+                <figure class="o-poster-slider__item">
+                    <div class="c-rating-tag">
+                        <img src="./assets/icons/fresh.svg" alt="Fresh Icon" class="c-rating-tag__icon">
+                        68%
+                    </div>
+                    <img class="o-poster-slider__poster" src="./assets/img/joker.webp" alt="The Joker Poster">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
