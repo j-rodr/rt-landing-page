@@ -81,6 +81,11 @@
    border-radius: 3px;
 }
 
+.c-movies-dropdown__rating-icon {
+   width: 25px;
+   height: 25px;
+}
+
 .c-btn {
    padding-block: var(--p-5);
    padding-inline: var(--p-10);
