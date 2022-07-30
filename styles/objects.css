@@ -98,11 +98,13 @@
 .o-section-dropdown {
    width: 100vw;
    max-width: 100%;
+   padding-block-start: var(--p-10);
+   padding-block-end: var(--p-12);
    position: absolute;
    top: 100%;
    left: 0;
    display: flex;
    justify-content: center;
-   background-color: blue;
-   color: black;
+   align-items: center;
+   z-index: 10;
 }

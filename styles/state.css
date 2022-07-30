@@ -7,6 +7,7 @@
 @media only screen and (min-width: 800px) {
    .o-logo {
       width: 125px;
+      margin-inline-start: 0;
    }
    .c-masthead {
       padding-block: var(--p-7);
@@ -43,7 +44,7 @@
 
 @media only screen and (min-width: 800px) and (max-width: 1278px) {
    html {
-      font-size: 65%;
+      font-size: 63%;
    }
    .c-hero {
       padding-block: 6.5rem;
@@ -82,6 +83,9 @@
 }
 
 @media only screen and (min-width: 1279px) {
+   html {
+      font-size: 60%;
+   }
    .c-hero {
       width: var(--content-width);
       flex-direction: row;
@@ -91,6 +95,7 @@
    }
    .c-hero__main {
       width: 38%;
+      min-width: 420px;
       max-width: 647px;
    }
    .o-poster-slider {
@@ -174,7 +179,7 @@
 
 @media only screen and (min-width: 1800px) {
    html {
-      font-size: 78%;
+      font-size: 75%;
    }
    .u-wrapper {
       max-width: 1790px;

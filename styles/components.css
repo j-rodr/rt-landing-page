@@ -36,6 +36,10 @@
    font-weight: var(--fw-2);
 }
 
+.c-navbar__item:hover {
+   text-decoration: none;
+}
+
 .c-navbar__item:hover path {
    stroke: var(--clr-black-8);
 }
@@ -43,6 +47,38 @@
 .c-navbar__item:hover {
    color: var(--clr-black-8);
    background-color: var(--clr-white);
+}
+
+.c-movies-dropdown {
+   display: flex;
+   justify-content: space-between;
+   color: var(--clr-black-8);
+   background-color: var(--clr-white);
+}
+
+.c-movies-dropdown__group {
+   display: flex;
+   flex-wrap: wrap;
+   width: 48%;
+   max-height: 100%;
+}
+
+.c-movies-dropdown__item {
+   width: 100%;
+   min-width: 100px;
+   max-width: 130px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.c-movies-dropdown__col {
+   flex-shrink: 0;
+}
+
+.c-movies-dropdown__col .o-poster {
+   border-radius: 3px;
 }
 
 .c-btn {
