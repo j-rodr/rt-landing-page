@@ -5,13 +5,30 @@ let searchMenu = document.querySelector('.js-search-menu')
 let navMenu = document.querySelector('.js-nav-menu')
 let mainContent = document.querySelector('.js-main')
 let moviesDropdown = document.querySelector('.js-movies-dropdown')
+let showsDropdown = document.querySelector('.js-shows-dropdown')
+let newsDropdown = document.querySelector('.js-news-dropdown')
 let moviesDropdownToggle = document.querySelector('.js-movies-toggle')
+let showsDropdownToggle = document.querySelector('.js-shows-toggle')
+let newsDropdownToggle = document.querySelector('.js-news-toggle')
 
 // Toggles for section dropdowns in navbar
 moviesDropdownToggle.addEventListener('click', () => {
     moviesDropdown.classList.toggle('u-hide')
+    showsDropdown.classList.add('u-hide')
+    newsDropdown.classList.add('u-hide')
 })
 
+showsDropdownToggle.addEventListener('click', () => {
+    showsDropdown.classList.toggle('u-hide')
+    moviesDropdown.classList.add('u-hide')
+    newsDropdown.classList.add('u-hide')
+})
+
+newsDropdownToggle.addEventListener('click', () => {
+    newsDropdown.classList.toggle('u-hide')
+    moviesDropdown.classList.add('u-hide')
+    showsDropdown.classList.add('u-hide')
+})
 
 // Toggles to open/close nav menu
 navMenuToggles.forEach((toggle) => {

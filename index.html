@@ -19,7 +19,7 @@
 
     <!-- #Masthead -->
 
-    <header class="c-masthead u-flex u-jc-center u-ai-center u-bg-black-9 u-pb-6">
+    <header class="c-masthead u-flex u-jc-center u-ai-center u-bg-black-9 u-pb-8">
         <div class="u-wrapper u-flex u-jc-space-between u-ai-center">
             <div class="u-flex u-ai-center u-jc-center u-gap-3">
                 <a class="u-flex u-ai-center u-jc-center" href="./"><img class="o-logo" src="./assets/img/logo.svg"
@@ -68,6 +68,9 @@
     <div class="c-navbar u-d-none u-jc-center">
         <div class="u-wrapper u-flex u-jc-space-between">
             <div class="c-navbar__group">
+
+                <!-- #Movies-dropdown-toggle -->
+
                 <button class="c-navbar__item js-movies-toggle">
                     Movies
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,22 +167,287 @@
                         </div>
                     </div>
                 </div>
-                <button class="c-navbar__item">
+
+                <!-- #TV-shows-dropdown-toggle -->
+
+                <button class="c-navbar__item js-shows-toggle">
                     TV Shows
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2.3" />
                     </svg>
                 </button>
-                <button class="c-navbar__item">
+
+                <!-- #TV-shows-dropdown -->
+
+                <div class="o-section-dropdown js-shows-dropdown u-hide u-bg-white u-bs-elevation">
+                    <div class="u-wrapper c-shows-dropdown">
+                        <div class="c-shows-dropdown__col">
+                            <h3 class="u-fs-4 u-mb-end-7">New TV Tonight</h3>
+                            <div class="u-flex u-flex-column u-gap-2">
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/certified-fresh-simplified.svg"
+                                            alt="Certified Fresh Icon" class="c-shows-dropdown__rating-icon">
+                                        100%
+                                    </div>
+                                    <p class="u-truncate-text">Hacks: Season 2</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/certified-fresh-simplified.svg"
+                                            alt="Certified Fresh Icon" class="c-shows-dropdown__rating-icon">
+                                        88%
+                                    </div>
+                                    <p class="u-truncate-text">The Essex Serpent: Limited Series</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/certified-fresh-simplified.svg"
+                                            alt="Certified Fresh Icon" class="c-shows-dropdown__rating-icon">
+                                        81%
+                                    </div>
+                                    <p class="u-truncate-text">The Lincoln Lawyer: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/fresh.svg" alt="Certified Fresh Icon"
+                                            class="c-shows-dropdown__rating-icon">
+                                        68%
+                                    </div>
+                                    <p class="u-truncate-text">Candy: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/fresh.svg" alt="Certified Fresh Icon"
+                                            class="c-shows-dropdown__rating-icon">
+                                        61%
+                                    </div>
+                                    <p class="u-truncate-text">Conversations With Friends: Limited Series</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/rotten.svg" alt="Certified Fresh Icon"
+                                            class="c-shows-dropdown__rating-icon">
+                                        51%
+                                    </div>
+                                    <p class="u-truncate-text">Night Sky: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/rotten.svg" alt="Certified Fresh Icon"
+                                            class="c-shows-dropdown__rating-icon">
+                                        23%
+                                    </div>
+                                    <p class="u-truncate-text">The Pentaverate: Season 1</p>
+                                </a>
+                            </div>
+                            <a class="u-fs-4 u-fw-4 u-flex u-ai-center u-mb-start-14 u-no-underl" href="#">View All <img
+                                    class="u-mi-start-1" src="./assets/icons/chevron-left.svg"></a>
+                        </div>
+                        <div class="c-shows-dropdown__col">
+                            <h3 class="u-fs-4 u-mb-end-7">Most Popular TV on RT</h3>
+                            <div class="u-flex u-flex-column u-gap-2">
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2 u-truncate-text" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/certified-fresh-simplified.svg"
+                                            alt="Certified Fresh Icon" class="c-shows-dropdown__rating-icon">
+                                        100%
+                                    </div>
+                                    <p class="u-truncate-text">Heartstopper: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2 u-truncate-text" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/certified-fresh-simplified.svg"
+                                            alt="Certified Fresh Icon" class="c-shows-dropdown__rating-icon">
+                                        98%
+                                    </div>
+                                    <p class="u-truncate-text">Star Trek: Strange New Worlds: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2 u-truncate-text" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/certified-fresh-simplified.svg"
+                                            alt="Certified Fresh Icon" class="c-shows-dropdown__rating-icon">
+                                        94%
+                                    </div>
+                                    <p class="u-truncate-text">The Staircase: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2 u-truncate-text" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/certified-fresh-simplified.svg"
+                                            alt="Certified Fresh Icon" class="c-shows-dropdown__rating-icon">
+                                        81%
+                                    </div>
+                                    <p class="u-truncate-text">Moon Knight: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2 u-truncate-text" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/fresh.svg" alt="Certified Fresh Icon"
+                                            class="c-shows-dropdown__rating-icon">
+                                        80%
+                                    </div>
+                                    <p class="u-truncate-text">Outer Range: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2 u-truncate-text" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/fresh.svg" alt="Certified Fresh Icon"
+                                            class="c-shows-dropdown__rating-icon">
+                                        70%
+                                    </div>
+                                    <p class="u-truncate-text">Halo: Season 1</p>
+                                </a>
+                                <a class="u-fs-4 u-flex u-ai-center u-gap-2 u-truncate-text" href="#">
+                                    <div class="u-flex u-ai-center u-fw-4">
+                                        <img src="./assets/icons/rotten.svg" alt="Certified Fresh Icon"
+                                            class="c-shows-dropdown__rating-icon">
+                                        37%
+                                    </div>
+                                    <p class="u-truncate-text">The Time Traveler's Wife: Season 1</p>
+                                </a>
+                            </div>
+                            <a class="u-fs-4 u-fw-4 u-flex u-ai-center u-mb-start-14 u-no-underl" href="#">View All <img
+                                    class="u-mi-start-1" src="./assets/icons/chevron-left.svg"></a>
+                        </div>
+                        <div class="c-shows-dropdown__col u-flex u-flex-column">
+                            <div class="u-flex u-flex-column u-mb-end-10">
+                                <h3 class="u-fs-4 u-mb-end-7">More</h3>
+                                <div class="u-flex u-flex-column u-flow">
+                                    <a class="u-fs-4 u-truncate-text" href="#">Top TV Shows</a>
+                                    <a class="u-fs-4 u-truncate-text" href="#">Certified Fresh TV</a>
+                                </div>
+                            </div>
+                            <div class="u-flex u-flex-column">
+                                <h3 class="u-fs-4 u-mb-end-7">Episodic Reviews</h3>
+                                <div class="u-flex u-flex-column u-flow">
+                                    <a class="u-fs-4 u-truncate-text" href="#">American Horror Stories: Season 1</a>
+                                    <a class="u-fs-4 u-truncate-text" href="#">The Walking Dead: Season 10</a>
+                                    <a class="u-fs-4 u-truncate-text" href="#">Star Wars: The Bad Batch: Season 1</a>
+                                    <a class="u-fs-4 u-truncate-text" href="#">Loki: Season 1</a>
+                                </div>
+                            </div>
+                            <a class="u-fs-4 u-fw-4 u-flex u-ai-center u-mb-start-14 u-no-underl" href="#">View All <img
+                                    class="u-mi-start-1" src="./assets/icons/chevron-left.svg"></a>
+                        </div>
+                        <div class="c-movies-dropdown__col">
+                            <h3 class="u-fs-4 u-mb-end-7">Certified Fresh Pick</h3>
+                            <div class="u-flex u-gap-5">
+                                <a href="#" class="c-movies-dropdown__item">
+                                    <img class="o-poster" src="./assets/img/lupin.webp" alt="Lupin: Season 2 Poster">
+                                    <div class="u-flex u-flex-column u-ai-center u-mb-start-4">
+                                        <div class="u-fs-5 u-fw-4 u-flex u-ai-center u-mb-end-0">
+                                            <img src="./assets/icons/certified-fresh-simplified.svg"
+                                                alt="Certified Fresh Icon"
+                                                class="c-movies-dropdown__rating-icon u-mi-end-1">
+                                            96%
+                                        </div>
+                                        <p class="u-fs-4 u-fw-2 u-mb-end-0">Lupin: Season 2</p>
+                                        <span class="u-fw-2 u-text-blue u-fs-3">27 reviews</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- #News-dropdown-toggle -->
+
+                <button class="c-navbar__item js-news-toggle">
                     News
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2.3" />
                     </svg>
                 </button>
-                <a href="https://www.rottentomatoes.com/showtimes" class="c-navbar__item">Showtimes</a>
+
+                <!-- #News-dropdown -->
+
+                <div class="o-section-dropdown js-news-dropdown u-hide u-bg-white u-bs-elevation">
+                    <div class="u-wrapper c-news-dropdown">
+                        <div class="c-news-dropdown__group">
+                            <h3 class="u-fs-4 u-mb-end-7">Columns</h3>
+                            <div class="u-flex u-flex-column u-flow">
+                                <a class="u-fs-4 u-truncate-text" href="#">24 Frames</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">All-Time Lists</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Binge Guide</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Comic on TV</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Countdown</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Critics Consensus</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Five Favorite Films</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Now Streaming</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Parental Guidance</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Red Carpet Roundup</a>
+                                <a class="u-fs-4 u-truncate-text" href="#">Scorecards</a>
+                            </div>
+                            <a class="u-fs-4 u-fw-4 u-flex u-ai-center u-mb-start-14 u-no-underl" href="#">View All <img
+                                    class="u-mi-start-1" src="./assets/icons/chevron-left.svg"></a>
+                        </div>
+                        <div class="c-news-dropdown__group u-flex u-flex-wrap u-gap-7">
+                            <div class="c-news-dropdown__col">
+                                <div class="u-flex u-ai-center u-jc-space-between u-mb-end-7">
+                                    <h3 class="u-fs-4">Best and Worst</h3>
+                                    <a href="#" class="u-fw-2 u-text-blue u-fs-3 u-hover-underl">View All</a>
+                                </div>
+                                <div class="u-flex u-flex-column u-gap-4">
+                                    <a href="#" class="u-flex u-flex-column">
+                                        <img class="c-news-dropdown__post-image" src="./assets/img/sydney-poitier.webp"
+                                            alt="Sydney Poitier Image">
+                                        <p class="u-truncate-text u-fs-4 u-mb-start-2">Sydney Poitier’s 7 Most Memorable
+                                            Performances</p>
+                                    </a>
+                                    <a href="#" class="u-flex u-flex-column">
+                                        <img class="c-news-dropdown__post-image" src="./assets/img/avengers-marvel.webp"
+                                            alt="Avengers: Endgame Poster">
+                                        <p class="u-truncate-text u-fs-4 u-mb-start-2">Marvel Movies Ranked Worst to
+                                            Best by Tomatometer</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="c-news-dropdown__col">
+                                <div class="u-flex u-ai-center u-jc-space-between u-mb-end-7">
+                                    <h3 class="u-fs-4">Guides</h3>
+                                    <a href="#" class="u-fw-2 u-text-blue u-fs-3 u-hover-underl">View All</a>
+                                </div>
+                                <div class="u-flex u-flex-column u-gap-4">
+                                    <a href="#" class="u-flex u-flex-column">
+                                        <img class="c-news-dropdown__post-image"
+                                            src="./assets/img/AA-pacific-islander.webp" alt="Asian-American Pacific Islander
+                                            Heritage Image">
+                                        <p class="u-truncate-text u-fs-4 u-mb-start-2">Asian-American Pacific Islander
+                                            Heritage</p>
+                                    </a>
+                                    <a href="#" class="u-flex u-flex-column">
+                                        <img class="c-news-dropdown__post-image" src="./assets/img/Streaming-Wars.webp"
+                                            alt="Streaming Platforms Illustration">
+                                        <p class="u-truncate-text u-fs-4 u-mb-start-2">TV and Streaming News</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="c-news-dropdown__col">
+                                <div class="u-flex u-ai-center u-jc-space-between u-mb-end-7">
+                                    <h3 class="u-fs-4">RT News</h3>
+                                    <a href="#" class="u-fw-2 u-text-blue u-fs-3 u-hover-underl">View All</a>
+                                </div>
+                                <div class="u-flex u-flex-column u-gap-4">
+                                    <a href="#" class="u-flex u-flex-column">
+                                        <img class="c-news-dropdown__post-image" src="./assets/img/homelander.webp"
+                                            alt="Homelander from The Boys Poster">
+                                        <p class="u-truncate-text u-fs-4 u-mb-start-2">Everything We Know About The Boys
+                                            Season 3</p>
+                                    </a>
+                                    <a href="#" class="u-flex u-flex-column">
+                                        <img class="c-news-dropdown__post-image" src="./assets/img/doctor-strange.webp"
+                                            alt="Doctor Strange in the Multiverse of Madness Poster">
+                                        <p class="u-truncate-text u-fs-4 u-mb-start-2">Weekend Box Office Results: The
+                                            Mulitiverse of Madness Shrinks a little but still dominates</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://editorial.rottentomatoes.com/article/rt-podcast/"
+                    class="c-navbar__item u-flex u-ai-center">RT Podcast</a>
             </div>
             <div class="c-navbar__group">
-                <a href="https://editorial.rottentomatoes.com/article/rt-podcast/" class="c-navbar__item">RT Podcast</a>
+                <a href="https://www.rottentomatoes.com/showtimes" class="c-navbar__item">Showtimes</a>
                 <a href="https://www.rottentomatoes.com/about#whatisthetomatometer"
                     class="c-navbar__item">Tomatometer®</a>
                 <a href="https://www.rottentomatoes.com/critics" class="c-navbar__item">Critics</a>
@@ -193,16 +461,16 @@
 
         <!-- #Masthead-open -->
 
-        <div class="u-wrapper u-pb-6 u-flex u-jc-space-between u-ai-center u-pb-end-8">
+        <div class="u-wrapper u-pb-8 u-flex u-jc-space-between u-ai-center u-pb-end-8">
             <a class="u-flex u-ai-center" href="./"><img class="o-logo" src="./assets/img/logo.svg"
                     alt="Rotten Tomatoes Logo"></a>
             <div class="u-flex u-ai-center">
                 <button class="c-close-toggle js-close-search-menu u-center-flex">
                     Close
                     <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.5 1.25L2 9.75" stroke="#171717" stroke-width="1.5" stroke-linecap="square"
+                        <path d="M10.5 1.25L2 9.75" stroke="#171717" stroke-width="1.7" stroke-linecap="square"
                             stroke-linejoin="round" />
-                        <path d="M2 1.25L10.5 9.75" stroke="#171717" stroke-width="1.5" stroke-linecap="square"
+                        <path d="M2 1.25L10.5 9.75" stroke="#171717" stroke-width="1.7" stroke-linecap="square"
                             stroke-linejoin="round" />
                     </svg>
                 </button>
@@ -383,16 +651,16 @@
 
         <!-- #Masthead-open -->
 
-        <div class="u-wrapper u-pb-6 u-flex u-jc-space-between u-ai-center u-pb-end-8">
+        <div class="u-wrapper u-pb-8 u-flex u-jc-space-between u-ai-center u-pb-end-8">
             <a class="u-flex u-ai-center" href="./"><img class="o-logo" src="./assets/img/logo.svg"
                     alt="Rotten Tomatoes Logo"></a>
             <div class="u-flex u-ai-center">
                 <button class="c-close-toggle js-nav-toggle u-center-flex">
                     Close
                     <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.5 1.25L2 9.75" stroke="#171717" stroke-width="1.5" stroke-linecap="square"
+                        <path d="M10.5 1.25L2 9.75" stroke="#171717" stroke-width="1.7" stroke-linecap="square"
                             stroke-linejoin="round" />
-                        <path d="M2 1.25L10.5 9.75" stroke="#171717" stroke-width="1.5" stroke-linecap="square"
+                        <path d="M2 1.25L10.5 9.75" stroke="#171717" stroke-width="1.7" stroke-linecap="square"
                             stroke-linejoin="round" />
                     </svg>
                 </button>
@@ -433,7 +701,15 @@
             </label>
             <a
                 class="u-hover-bg-1 u-fs-4 u-fw-2 u-center-content-x u-flex u-ai-center u-gap-1 u-expand-x u-pb-5 u-top-divider u-c-pointer u-gap-1 js-search-toggle">
-                <img src="./assets/icons/search-icon-black.svg">Search
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.99999 13C10.3137 13 13 10.3137 13 6.99999C13 3.68629 10.3137 1 6.99999 1C3.68629 1 1 3.68629 1 6.99999C1 10.3137 3.68629 13 6.99999 13Z"
+                        stroke="#171717" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M15.4343 16.5657L16 17.1314L17.1314 16L16.5657 15.4343L15.4343 16.5657ZM12.0657 10.9343L11.5 10.3686L10.3686 11.5L10.9343 12.0657L12.0657 10.9343ZM16.5657 15.4343L12.0657 10.9343L10.9343 12.0657L15.4343 16.5657L16.5657 15.4343Z"
+                        fill="#171717" />
+                </svg>
+                Search
             </a>
         </div>
 
@@ -498,7 +774,128 @@
                 </figure>
             </div>
         </section>
+
+        <!-- #Scoring-section -->
+
+        <section class="o-section u-full-bleed u-bg-black-1">
+            <div class="u-wrapper o-centered-section">
+                <div>
+                    <h2 class="u-fs-8 u-fw-5 u-lh-2 u-mb-end-7">
+                        How our <span class="u-text-red">scores</span> work
+                    </h2>
+                    <p class="u-lh-base u-fw-2 u-margin-center">
+                        Every film or television show receives two scores, one from critics and the other one from the
+                        audience (registered users). Both scores can be either Fresh or Rotten depending on the
+                        percentage of positive reviews.
+                    </p>
+                </div>
+                <div class="u-flex u-flex-column u-gap-3 c-scoring-section__scales">
+                    <div class="u-flex u-jc-center">
+                        <img class="u-mi-end-3" src="./assets/icons/fresh.svg" alt="Fresh Icon">
+                        <div class="u-ta-default">
+                            <p class="u-lh-base u-fw-4">Fresh Score</p>
+                            <p class="u-lh-base u-fw-2">From 60% up</p>
+                        </div>
+                    </div>
+
+                    <div class="u-flex u-jc-center">
+                        <img class="u-mi-end-3" src="./assets/icons/rotten.svg" alt="Fresh Icon">
+                        <div class="u-ta-default">
+                            <p class="u-lh-base u-fw-4">Rotten Score</p>
+                            <p class="u-lh-base u-fw-2">Less than 60%</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="c-btn c-btn--secondary u-as-center">More scoring details</button>
+            </div>
+        </section>
+
+        <!-- #Reviews-section -->
+
+        <section class="o-section u-full-bleed u-bg-white">
+            <div class="u-wrapper c-reviews-section">
+                <div>
+                    <h2 class="u-fs-8 u-fw-5 u-lh-2 u-mb-end-7">
+                        <span class="u-text-red">Curation</span> of reviews
+                    </h2>
+                    <p class="u-lh-base u-fw-2 c-reviews-section__copy">
+                        Certified Fresh status is a special distinction awarded to the best-reviewed movies and TV
+                        shows. The Tomatometer score must be consistent and unlikely to deviate significantly before a
+                        film or TV show is marked Certified Fresh.
+                    </p>
+                </div>
+                <div class="c-reviews-section__figure">
+                    <div class="u-flex u-ai-start u-gap-3 u-jc-center">
+                        <div class="c-rating-tag u-p-static">
+                            <img class="c-rating-tag__icon" src="./assets/icons/fresh.svg" alt="Fresh Score Icon">
+                            69%
+                        </div>
+                        <img class="c-reviews-section__lines" src="./assets/img/lines-element.png" alt="">
+                    </div>
+                    <div class="u-flex u-ai-start u-gap-3 u-jc-center">
+                        <div class="c-rating-tag  u-p-static">
+                            <img class="c-rating-tag__icon" src="./assets/icons/rotten.svg" alt="Rotten Score Icon">
+                            38%
+                        </div>
+                        <img class="c-reviews-section__lines" src="./assets/img/lines-element.png" alt="">
+                    </div>
+                    <div class="u-flex u-ai-start u-gap-3 u-jc-center">
+                        <div class="c-rating-tag u-p-static">
+                            <img class="c-rating-tag__icon" src="./assets/icons/certified-fresh.svg"
+                                alt="Rotten Score Icon">
+                            82%
+                        </div>
+                        <img class="c-reviews-section__lines" src="./assets/img/lines-element.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- #Critics-section -->
+
+        <section class="o-section u-full-bleed u-bg-black-1">
+            <div class="u-wrapper o-centered-section">
+                <div>
+                    <h2 class="u-fs-8 u-fw-5 u-lh-2 u-mb-end-7">
+                        Approved <span class="u-text-red">critics</span>
+                    </h2>
+                    <p class="u-lh-base u-fw-2">
+                        Approved critics come from all over the world. They publish on a variety of platforms. Reviews
+                        from approved critics form the trusted score for movies and TV shows.
+                    </p>
+                </div>
+                <button class="c-btn c-btn--secondary u-as-center">Become a critic</button>
+            </div>
+        </section>
+
+        <!-- #Certified-fresh-section -->
+
+        <section class="o-section u-full-bleed u-bg-white">
+            <div class="u-wrapper o-centered-section">
+                <div>
+                    <img class="c-certified-section__icon u-mb-end-1" src="./assets/icons/certified-fresh.svg"
+                        alt="Certified Fresh Icon">
+                    <h2 class="u-fs-8 u-fw-5 u-lh-2 u-mb-end-7">
+                        <span class="u-text-red">Certified</span> Fresh
+                    </h2>
+                    <p class="u-lh-base u-fw-2 u-margin-center">
+                        Certified Fresh status is a special distinction awarded to the best-reviewed movies and TV
+                        shows. The Tomatometer score must be consistent and unlikely to deviate significantly before a
+                        film or TV show is marked Certified Fresh.
+                    </p>
+                </div>
+                <button class="c-btn c-btn--secondary u-as-center">Check requirements</button>
+            </div>
+        </section>
     </main>
+
+    <!-- #Footer -->
+
+    <footer class="o-section u-full-bleed u-bg-black-9 u-text-white">
+        <div class="u-wrapper">
+            This is real, this is me.
+        </div>
+    </footer>
 
     <script src="./js/index.js"></script>
 </body>

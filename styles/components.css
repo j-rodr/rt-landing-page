@@ -19,7 +19,7 @@
 }
 
 .c-navbar > .u-wrapper {
-   width: calc(var(--content-width) + (var(--p-7) * 2) - 8px);
+   width: calc(var(--content-width) + (var(--p-7) * 2) - 15px);
 }
 
 .c-navbar__group {
@@ -86,6 +86,45 @@
    height: 25px;
 }
 
+.c-shows-dropdown {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 60px;
+   color: var(--clr-black-8);
+   background-color: var(--clr-white);
+}
+
+.c-shows-dropdown__col {
+   width: 100%;
+   min-width: 180px;
+   max-width: 300px;
+}
+
+.c-shows-dropdown__rating-icon {
+   width: 21px;
+   height: 21px;
+   margin-inline-end: 5px;
+}
+
+.c-news-dropdown {
+   display: flex;
+   gap: 60px;
+   color: var(--clr-black-8);
+}
+
+.c-news-dropdown__col {
+   width: 100%;
+   min-width: 180px;
+   max-width: 240px;
+}
+
+.c-news-dropdown__post-image {
+   width: 100%;
+   max-width: 240px;
+   aspect-ratio: 4 / 2.2;
+   object-fit: cover;
+}
+
 .c-btn {
    padding-block: var(--p-5);
    padding-inline: var(--p-10);
@@ -106,7 +145,11 @@
 
 .c-btn--secondary {
    color: var(--clr-white);
-   background-color: var(--clr-red);
+   background-color: var(--clr-black-8);
+}
+
+.c-btn--secondary:hover {
+   background-color: var(--clr-black-7);
 }
 
 .c-btn--gray {
@@ -148,7 +191,7 @@
 
    border-radius: var(--br-6);
 
-   font-size: var(--fs-3);
+   font-size: var(--fs-4);
    font-weight: var(--fw-1);
    line-height: var(--lh-base);
 
@@ -193,7 +236,7 @@
 
 .c-search-bar--light .c-search-bar__icon {
    position: absolute;
-   top: 9px;
+   top: 13px;
    left: 12px;
 }
 
@@ -213,7 +256,7 @@
 .c-search-bar--dark .c-search-bar__icon {
    position: absolute;
    width: 18px;
-   top: 11.5px;
+   top: 10.5px;
    left: 15px;
 }
 
@@ -278,7 +321,12 @@
 }
 
 .c-hero {
-   padding-block: 4rem;
+   padding-block: 6rem 7rem;
+}
+
+.c-hero__main {
+   align-self: start;
+   max-width: 525px;
 }
 
 .c-rating-tag {
@@ -301,4 +349,42 @@
 .c-rating-tag__icon {
    width: 29px;
    height: 29px;
+}
+
+.c-reviews-section {
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+   text-align: center;
+   padding-block: 3rem;
+}
+
+.c-reviews-section__figure {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   margin-inline-start: 30px;
+}
+
+.c-reviews-section__figure div:nth-child(2) {
+   margin-inline-start: -60px;
+}
+
+.c-reviews-section .c-rating-tag {
+   width: auto;
+}
+
+.c-reviews-section .c-rating-tag__icon {
+   width: 32px;
+   height: 32px;
+}
+
+.c-reviews-section__lines {
+   width: 50%;
+}
+
+.c-certified-section__icon {
+   width: 45px;
+   height: 45px;
 }
