@@ -43,7 +43,8 @@
    --lh-base: calc(25 / 16);
 
    /* Box shadows */
-   --bs-elevation: 0 2px 5px 0 rgba(158, 158, 158, 0.25);
+   --bs-card: 0 4px 4px rgba(158, 158, 158, 0.152);
+   --bs-elevation: 0 2px 5px rgba(158, 158, 158, 0.25);
 
    /* Flex gap */
    --gap-1: 1rem;

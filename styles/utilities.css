@@ -228,6 +228,18 @@
    padding-block-end: var(--p-8);
 }
 
+.u-pb-end-9 {
+   padding-block-end: var(--p-9);
+}
+
+.u-pb-end-10 {
+   padding-block-end: var(--p-10);
+}
+
+.u-pb-end-11 {
+   padding-block-end: var(--p-11);
+}
+
 .u-pb-end-12 {
    padding-block-end: var(--p-12);
 }
@@ -602,6 +614,10 @@
 
 .u-bs-elevation {
    box-shadow: var(--bs-elevation);
+}
+
+.u-ta-justify {
+   text-align: justify;
 }
 
 .u-ta-center {

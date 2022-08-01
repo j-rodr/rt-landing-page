@@ -23,6 +23,23 @@
    .c-search-bar--dark {
       display: block;
    }
+   .c-critics-section {
+      align-items: center;
+      gap: 60px;
+   }
+   .c-critics-section__main {
+      text-align: center;
+   }
+   .c-critics-section .c-btn--secondary {
+      align-self: center;
+   }
+   .c-critics-section__slider {
+      justify-content: center;
+      overflow-x: initial;
+   }
+   .c-person-card {
+      margin-block-end: 0;
+   }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -197,6 +214,13 @@
    .c-scoring-section__scales {
       flex-direction: row;
       gap: 30px;
+   }
+   .c-person-card {
+      width: 230px;
+      padding-block: 30px;
+   }
+   .c-critics-section__slider {
+      gap: 60px;
    }
 }
 

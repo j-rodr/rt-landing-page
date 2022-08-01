@@ -356,7 +356,8 @@
    flex-direction: column;
    gap: 60px;
    text-align: center;
-   padding-block: 3rem;
+   padding-block-start: 3rem;
+   padding-block-end: 3.5rem;
 }
 
 .c-reviews-section__figure {
@@ -387,4 +388,52 @@
 .c-certified-section__icon {
    width: 45px;
    height: 45px;
+}
+
+.c-critics-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+   padding-block: 3rem;
+}
+
+.c-person-card {
+   width: 210px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding-block: 20px;
+   padding-inline: 25px;
+   gap: 20px;
+   margin-block-end: var(--m-12);
+
+   border-radius: 4px;
+
+   box-shadow: var(--bs-card);
+}
+
+.c-person-card__image {
+   width: 140px;
+   aspect-ratio: 1;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.c-person-card__info {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+}
+
+.c-person-card__name {
+   font-size: var(--fs-base);
+   font-weight: var(--fw-4);
+}
+
+.c-person-card__occupation {
+   font-size: var(--fs-base);
+   font-weight: var(--fw-2);
 }
