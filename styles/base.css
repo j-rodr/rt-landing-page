@@ -15,6 +15,7 @@ body {
    background-color: var(--clr-white);
    color: var(--clr-black-8);
    font-size: var(--fs-base);
+   overflow-x: hidden;
 }
 
 button {

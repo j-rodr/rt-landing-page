@@ -66,7 +66,7 @@
 }
 
 .o-poster-slider {
-   width: 100%;
+   width: 100vw;
    display: flex;
    padding-block: 80px 15px;
    padding-inline: calc(var(--vw-remaining-space) / 2);

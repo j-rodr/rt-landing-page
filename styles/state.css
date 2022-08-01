@@ -25,7 +25,7 @@
    }
    .c-critics-section {
       align-items: center;
-      gap: 60px;
+      gap: 50px;
    }
    .c-critics-section__main {
       text-align: center;
@@ -56,6 +56,58 @@
    }
    .c-navbar {
       display: flex;
+   }
+   .c-newsletter-form__input,
+   .c-newsletter-form__button {
+      padding: 18px 16px;
+   }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 1109px) {
+   .c-footer__group:last-child {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+   }
+   .c-footer__copyright {
+      order: 1;
+      text-align: initial;
+      align-items: start;
+      align-self: start;
+   }
+   .c-footer__news {
+      order: 2;
+   }
+}
+
+@media only screen and (min-width: 1110px) {
+   .c-footer__group:last-child {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+   }
+
+   .c-footer__copyright {
+      text-align: initial;
+      align-items: start;
+   }
+
+   .c-footer__group:first-child .c-footer__col {
+      width: max-content;
+      min-width: auto;
+   }
+
+   .c-footer__col.u-show-on-query,
+   .c-footer__news.u-show-on-query {
+      width: 325px;
+   }
+
+   .u-hide-on-query {
+      display: none;
+   }
+
+   .u-show-on-query {
+      display: block;
    }
 }
 
@@ -88,6 +140,9 @@
       max-width: 173px;
       justify-content: start;
       flex-shrink: 1;
+   }
+   .o-poster-slider__item:first-child {
+      margin-inline-start: 0;
    }
    .o-poster-slider__item:nth-child(2) {
       margin-block-start: 145px;
@@ -182,6 +237,7 @@
    .o-poster-slider__item:first-child {
       align-self: center;
       grid-area: item1;
+      margin-inline-start: 0;
    }
 
    .o-poster-slider__item:nth-child(2) {
@@ -216,11 +272,12 @@
       gap: 30px;
    }
    .c-person-card {
-      width: 230px;
-      padding-block: 30px;
+      width: auto;
+      padding-block: 20px;
+      padding-inline: 28px;
    }
    .c-critics-section__slider {
-      gap: 60px;
+      gap: 50px;
    }
 }
 
@@ -246,6 +303,9 @@
    .c-movies-dropdown__item {
       max-width: 150px;
    }
+   .o-poster-slider__item:first-child {
+      margin-inline-start: 0;
+   }
    .c-reviews-section {
       flex-direction: row;
       align-items: center;
@@ -253,5 +313,11 @@
    }
    .c-reviews-section__figure div:nth-child(2) {
       margin-inline-start: -120px;
+   }
+   .c-newsletter-form__input {
+      width: 240px;
+   }
+   .c-newsletter-form__button {
+      min-width: 117px;
    }
 }

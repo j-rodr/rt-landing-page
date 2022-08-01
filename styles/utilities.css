@@ -76,6 +76,10 @@
 
 /* #Layout */
 
+.u-max-content-x {
+   width: max-content;
+}
+
 .u-wrapper {
    width: var(--content-width);
 }
@@ -514,6 +518,10 @@
 
 .u-text-red {
    color: var(--clr-red);
+}
+
+.u-text-black-5 {
+   color: var(--clr-black-5);
 }
 
 .u-text-blue {

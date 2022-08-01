@@ -741,7 +741,7 @@
                 <button class="c-btn c-btn--primary">Sign up</button>
             </div>
             <div class="o-poster-slider">
-                <figure class="o-poster-slider__item">
+                <figure class="o-poster-slider__item u-push-to-center">
                     <div class="c-rating-tag">
                         <img src="./assets/icons/certified-fresh.svg" alt="Certified Fresh Icon"
                             class="c-rating-tag__icon">
@@ -765,7 +765,7 @@
                     </div>
                     <img class="o-poster-slider__poster" src="./assets/img/servant.webp" alt="Servant Poster">
                 </figure>
-                <figure class="o-poster-slider__item">
+                <figure class="o-poster-slider__item u-pull-to-center">
                     <div class="c-rating-tag">
                         <img src="./assets/icons/fresh.svg" alt="Fresh Icon" class="c-rating-tag__icon">
                         68%
@@ -793,16 +793,16 @@
                     <div class="u-flex u-jc-center">
                         <img class="u-mi-end-3" src="./assets/icons/fresh.svg" alt="Fresh Icon">
                         <div class="u-ta-default">
-                            <p class="u-lh-base u-fw-4">Fresh Score</p>
-                            <p class="u-lh-base u-fw-2">From 60% up</p>
+                            <p class="u-lh-base u-fw-4 u-max-content-x">Fresh Score</p>
+                            <p class="u-lh-base u-fw-2 u-max-content-x">From 60% up</p>
                         </div>
                     </div>
 
                     <div class="u-flex u-jc-center">
                         <img class="u-mi-end-3" src="./assets/icons/rotten.svg" alt="Fresh Icon">
-                        <div class="u-ta-default">
-                            <p class="u-lh-base u-fw-4">Rotten Score</p>
-                            <p class="u-lh-base u-fw-2">Less than 60%</p>
+                        <div class="u-ta-default u-expand-x">
+                            <p class="u-lh-base u-fw-4 u-max-content-x">Rotten Score</p>
+                            <p class="u-lh-base u-fw-2 u-max-content-x">Less than 60%</p>
                         </div>
                     </div>
                 </div>
@@ -916,23 +916,107 @@
 
     <footer class="o-section u-full-bleed u-bg-black-9 u-text-white">
         <div class="u-wrapper c-footer">
-            <div class="c-footer__col">
-                <h3 class="u-fs-4 u-mb-end-7">Columns</h3>
-                <div class="u-flex u-flex-column u-flow">
-                    <a class="u-fs-4" href="#">24 Frames</a>
-                    <a class="u-fs-4" href="#">All-Time Lists</a>
-                    <a class="u-fs-4" href="#">Binge Guide</a>
-                    <a class="u-fs-4" href="#">Comic on TV</a>
-                    <a class="u-fs-4" href="#">Countdown</a>
-                    <a class="u-fs-4" href="#">Critics Consensus</a>
-                    <a class="u-fs-4" href="#">Five Favorite Films</a>
-                    <a class="u-fs-4" href="#">Now Streaming</a>
-                    <a class="u-fs-4" href="#">Parental Guidance</a>
-                    <a class="u-fs-4" href="#">Red Carpet Roundup</a>
-                    <a class="u-fs-4" href="#">Scorecards</a>
+            <div class="c-footer__group u-flex u-expand-x u-jc-space-between">
+                <div class="c-footer__col">
+                    <h3 class="u-fs-4 u-mb-end-7">Company</h3>
+                    <div class="u-flex u-flex-column u-flow">
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">What is the Tomatometer®?</a>
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">About Rotten Tomatoes</a>
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">Critic Submission</a>
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">Careers</a>
+                    </div>
+                </div>
+                <div class="c-footer__col">
+                    <h3 class="u-fs-4 u-mb-end-7">Legal</h3>
+                    <div class="u-flex u-flex-column u-flow">
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">Advertise</a>
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">Privacy Policy</a>
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">Terms of Service</a>
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">Licensing</a>
+                    </div>
+                </div>
+                <div class="c-footer__col">
+                    <h3 class="u-fs-4 u-mb-end-7">Preferences</h3>
+                    <div class="u-flex u-flex-column u-flow">
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">Do Not Sell My Info</a>
+                        <a class="u-fs-4 u-text-black-5 u-lh-base" href="#">AdChoices</a>
+                    </div>
+                </div>
+                <div class="c-footer__col u-hide-on-query">
+                    <h3 class="u-fs-4 u-mb-end-7">Follow us</h3>
+                    <div class="c-footer__social">
+                        <a href="#">
+                            <img src="./assets/icons/facebook.svg" alt="Facebook Icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/twitter.svg" alt="Twitter Icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/instagram.svg" alt="Instagram Icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/pinterest.svg" alt="Pinterest Icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/youtube.svg" alt="Youtube Icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="c-footer__news u-d-none u-show-on-query">
+                    <div class="c-footer__col c-footer__newsletter u-mb-end-6">
+                        <h3 class="u-fs-4 u-mb-end-7">Join the newsletter</h3>
+                        <p class="u-fs-4 u-text-black-5 u-lh-base">Get the freshest reviews, news and more delivered
+                            right
+                            to your
+                            inbox!</p>
+                    </div>
+                    <div class="c-newsletter-form">
+                        <input class="c-newsletter-form__input" type="email" placeholder="Enter your email">
+                        <button class="c-newsletter-form__button" type="submit">Sign up</button>
+                    </div>
                 </div>
             </div>
-            This is real, this is me.
+            <div class="c-footer__group u-flex u-flex-column">
+                <div class="c-footer__news u-hide-on-query">
+                    <div class="c-footer__col c-footer__newsletter u-mb-end-6">
+                        <h3 class="u-fs-4 u-mb-end-7">Join the newsletter</h3>
+                        <p class="u-fs-4 u-text-black-5 u-lh-base">Get the freshest reviews, news and more delivered
+                            right
+                            to your
+                            inbox!</p>
+                    </div>
+                    <div class="c-newsletter-form">
+                        <input class="c-newsletter-form__input" type="email" placeholder="Enter your email">
+                        <button class="c-newsletter-form__button" type="submit">Sign up</button>
+                    </div>
+                </div>
+                <div class="c-footer__copyright u-ta-center u-flex u-flex-column u-ai-center">
+                    <img class="u-mb-end-3" src="./assets/img/logo.svg" alt="Rotten Tomatoes Logo">
+                    <p class="u-text-black-5">Copyright© Fandango. All rights reserved.</p>
+                </div>
+                <div class="c-footer__col u-d-none u-show-on-query">
+                    <h3 class="u-fs-4 u-mb-end-7">Follow us</h3>
+                    <div class="c-footer__social">
+                        <a href="#">
+                            <img src="./assets/icons/facebook.svg" alt="Facebook Icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/twitter.svg" alt="Twitter Icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/instagram.svg" alt="Instagram Icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/pinterest.svg" alt="Pinterest Icon">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/youtube.svg" alt="Youtube Icon">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </footer>
 
