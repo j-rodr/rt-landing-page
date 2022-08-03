@@ -10,7 +10,8 @@ I created a landing page for Rotten Tomatoes from scratch as a design practice. 
 2. Base: styles for bare HTML elements  
 3. Objects [prefixed with o-]: reusable content-agnostic styles mostly used for layout  
 4. Components [prefixed with -c]: UI components  
-5. Utilities [prefixed with -u]: utility classes  
+5. Utilities [prefixed with -u]: utility classes
+6. State: media queries
 
 **Guidelines**
    
