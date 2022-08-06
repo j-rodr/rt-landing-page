@@ -248,6 +248,7 @@
    border-radius: 48px;
 
    font-weight: var(--fw-1);
+   font-size: 14px;
 
    color: var(--clr-white);
    background-color: var(--clr-black-8);
