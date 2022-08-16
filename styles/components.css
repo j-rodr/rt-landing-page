@@ -177,7 +177,8 @@
    font-size: var(--fs-3);
    font-weight: var(--fw-2);
    line-height: var(--lh-base);
-
+   
+   color: var(--clr-black-8);
    background-color: var(--clr-black-1);
 }
 
