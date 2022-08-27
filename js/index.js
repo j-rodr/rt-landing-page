@@ -21,9 +21,9 @@ const observer = new IntersectionObserver(entries => {
     })
 }, { threshold: 0.1 })
 
-// Don't use observer on hero section, since it has a different animation
+// Don't use observer on hero section nor footer, since they have a different animation
 sections.forEach(section => {
-    if (![...section.classList].includes('c-hero')) {
+    if (![...section.classList].includes('c-hero') && ![...section.classList].includes('o-footer')) {
         observer.observe(section)
     }
 })
