@@ -1,6 +1,5 @@
-# Landing page design for Rotten Tomatoes
-
-I created a landing page for Rotten Tomatoes from scratch as a design practice. Then I coded it up from scratch using HTML and vanilla JS/CSS.
+# 1. Landing Page
+For my first portfolio project I decided to design and create a landing page for Rotten Tomatoes. I intended to practice my overall CSS skills and knowledge about responsive design and transitions/animations. 
 
 # CSS Style Guide
 
