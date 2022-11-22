@@ -1,6 +1,8 @@
 # 1. Landing Page
 For my first portfolio project I decided to design and create a landing page for Rotten Tomatoes. I intended to practice my overall CSS skills and knowledge about responsive design and transitions/animations. 
 
+[Go to project →](https://j-rodr.github.io/rt-landing-page/) 
+
 # CSS Style Guide
 
 **File structure (least to most specific)**
